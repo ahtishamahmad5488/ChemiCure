@@ -3,6 +3,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {SCREENS} from '../Constants/screens';
+import TabNavigator from './TabNavigator';
 
 const Stack = createNativeStackNavigator();
 const MainNavigator = () => {
@@ -35,6 +36,7 @@ const MainNavigator = () => {
           name="NewPasswordScreen"
           component={SCREENS.NewPasswordScreen}
         />
+        <Stack.Screen name="HomeScreen" component={TabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );

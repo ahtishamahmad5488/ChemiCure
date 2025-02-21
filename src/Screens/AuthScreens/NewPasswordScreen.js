@@ -8,6 +8,7 @@ import {
 import React from 'react';
 import CustomTextInput from '../../Components/TextInputField';
 import {ICONS} from '../../Constants/icons';
+import UniversalButton from '../../Components/universalButton';
 
 const NewPasswordScreen = ({navigation}) => {
   return (
@@ -30,7 +31,14 @@ const NewPasswordScreen = ({navigation}) => {
         <CustomTextInput />
       </View>
       <View style={styles.illustrationContainer}>
-        <ICONS.SafeFood />
+        <ICONS.SafeFoodIcon />
+      </View>
+      <View style={styles.buttonContainer}>
+        <UniversalButton
+          buttonStyle={styles.buttonStyle}
+          label="Reset Password"
+          onPress={() => navigation.navigate('HomeScreen')}
+        />
       </View>
     </ScrollView>
   );
@@ -71,7 +79,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
   },
   textFieldContainer: {
-    marginTop: 40,
+    marginTop: 20,
     paddingVertical: 30,
   },
   labelTextField: {
@@ -81,8 +89,13 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   illustrationContainer: {
-    backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  buttonContainer: {
+    marginTop: 30,
+  },
+  buttonStyle: {
+    borderRadius: 30,
   },
 });

@@ -16,11 +16,35 @@ import sadIcon from '../Assets/Icons/sadIcon.svg';
 import relaxIcon from '../Assets/Icons/relaxIcon.svg';
 import illustrationHappyIcon from '../Assets/Icons/illustrationHappyIcon.svg';
 import NewPasswordIcon from '../Assets/Icons/NewPasswordIcon.svg';
+import RecommendationIcon from '../Assets/Icons/RecommendationIcon.svg';
+import PlusIcon from '../Assets/Icons/PlusIcon.svg';
 import SafeFood from '../Assets/Icons/SafeFood.svg';
+import UserIcon from '../Assets/Icons/UserIcon.svg';
+import HealthIcon from '../Assets/Icons/HealthIcon.svg';
+import HomeIcon from '../Assets/Icons/HomeIcon.svg';
+import SafeFoodIcon from '../Assets/Icons/SafeFoodIcon.svg';
+import menuIcon from '../Assets/Icons/menuIcon.svg';
+import bellIcon from '../Assets/Icons/bellIcon.svg';
+import chemicureText from '../Assets/Icons/chemicureText.svg';
+import TemperatureIcon from '../Assets/Icons/TemperatureIcon.svg';
+import waterIcon from '../Assets/Icons/waterIcon.svg';
+import HumidityIcon from '../Assets/Icons/HumidityIcon.svg';
+
 export const ICONS = {
   smallIcon: smallIcon,
   largeIcon: largeIcon,
   mediamIcon: mediamIcon,
+  menuIcon: menuIcon,
+  TemperatureIcon: TemperatureIcon,
+  waterIcon: waterIcon,
+  HumidityIcon: HumidityIcon,
+  bellIcon: bellIcon,
+  chemicureText: chemicureText,
+  RecommendationIcon: RecommendationIcon,
+  PlusIcon: PlusIcon,
+  UserIcon: UserIcon,
+  HealthIcon: HealthIcon,
+  HomeIcon: HomeIcon,
   logoIcon: logoIcon,
   splashText: splashText,
   bgWelcomeIcon: bgWelcomeIcon,
@@ -37,4 +61,5 @@ export const ICONS = {
   relaxIcon: relaxIcon,
   NewPasswordIcon: NewPasswordIcon,
   SafeFood: SafeFood,
+  SafeFoodIcon: SafeFoodIcon,
 };
