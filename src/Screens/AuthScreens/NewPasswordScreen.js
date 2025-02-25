@@ -33,14 +33,6 @@ const NewPasswordScreen = ({navigation}) => {
         </View>
       <View style={styles.illustrationContainer}>
         <ICONS.SafeFood />
-        <UniversalButton
-            buttonStyle={styles.buttonContainerStyle}
-            label="Submit"
-            onPress={() => navigation.navigate('SignInScreen')}
-          />
-        
-        
-       
       </View>
     </ScrollView>
   );
@@ -82,7 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   textFieldContainer: {
-    marginTop: 40,
+    marginTop: 20,
     paddingVertical: 30,
     
   },
@@ -106,9 +98,14 @@ const styles = StyleSheet.create({
    
   },
   illustrationContainer: {
-    flex: 1,
-    marginTop: -20,
+    backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  buttonContainer: {
+    marginTop: 30,
+  },
+  buttonStyle: {
+    borderRadius: 30,
   },
 });

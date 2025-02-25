@@ -16,14 +16,24 @@ import sadIcon from '../Assets/Icons/sadIcon.svg';
 import relaxIcon from '../Assets/Icons/relaxIcon.svg';
 import illustrationHappyIcon from '../Assets/Icons/illustrationHappyIcon.svg';
 import NewPasswordIcon from '../Assets/Icons/NewPasswordIcon.svg';
+import RecommendationIcon from '../Assets/Icons/RecommendationIcon.svg';
+import PlusIcon from '../Assets/Icons/PlusIcon.svg';
 import SafeFood from '../Assets/Icons/SafeFood.svg';
-
-
-
 export const ICONS = {
   smallIcon: smallIcon,
   largeIcon: largeIcon,
   mediamIcon: mediamIcon,
+  menuIcon: menuIcon,
+  TemperatureIcon: TemperatureIcon,
+  waterIcon: waterIcon,
+  HumidityIcon: HumidityIcon,
+  bellIcon: bellIcon,
+  chemicureText: chemicureText,
+  RecommendationIcon: RecommendationIcon,
+  PlusIcon: PlusIcon,
+  UserIcon: UserIcon,
+  HealthIcon: HealthIcon,
+  HomeIcon: HomeIcon,
   logoIcon: logoIcon,
   splashText: splashText,
   bgWelcomeIcon: bgWelcomeIcon,
@@ -40,5 +50,4 @@ export const ICONS = {
   relaxIcon: relaxIcon,
   NewPasswordIcon: NewPasswordIcon,
   SafeFood: SafeFood,
-
 };
