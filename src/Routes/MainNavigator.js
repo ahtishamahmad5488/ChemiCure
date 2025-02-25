@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import {SCREENS} from '../Constants/screens';
 
 const Stack = createNativeStackNavigator();
@@ -35,6 +36,11 @@ const MainNavigator = () => {
           name="NewPasswordScreen"
           component={SCREENS.NewPasswordScreen}
         />
+         <Stack.Screen
+          name="HomeScreen"
+          component={SCREENS.HomeScreen}
+        />
+       
       </Stack.Navigator>
     </NavigationContainer>
   );

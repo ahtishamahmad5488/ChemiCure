@@ -33,6 +33,7 @@ const CustomTextInput = forwardRef(
           ref={ref}
           multiline={multiline}
         />
+        
       </View>
     );
   },
@@ -40,16 +41,20 @@ const CustomTextInput = forwardRef(
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 8,
+    marginVertical: 5,
+    marginTop: '8%' ,
+    marginBottom: 0,
     width: '100%',
   },
   input: {
-    borderWidth: 1,
-    borderColor: 'rgba(190, 197, 209, 1)',
+    borderWidth: 1.8,
+    borderColor: 'rgb(0, 1, 3)',
     borderRadius: 12,
-    color: 'rgba(156, 163, 175, 1)',
-    padding: 12,
-    fontSize: 16,
+    //color: 'rgba(156, 163, 175, 1)',
+    fontSize: 20,
+    fontWeight: 'bold',
+    padding: 17,
+    fontSize: 17,
     textAlign: 'left',
   },
 });

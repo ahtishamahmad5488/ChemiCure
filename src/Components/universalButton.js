@@ -10,6 +10,7 @@ const UniversalButton = ({
   arrowIcon, // Arrow SVG ya koi bhi icon as a prop
 }) => {
   return (
+    // Button Component
     <TouchableOpacity
       style={[styles.button, buttonStyle]} // Apply default and custom styles
       onPress={onPress}>
@@ -23,7 +24,7 @@ const UniversalButton = ({
   );
 };
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   button: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#FFFFFF', // Default text color
-    fontSize: 17,
+    fontSize: 19,
     fontWeight: '600', // Semi-bold
   },
   iconContainer: {

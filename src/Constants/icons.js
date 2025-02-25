@@ -17,6 +17,9 @@ import relaxIcon from '../Assets/Icons/relaxIcon.svg';
 import illustrationHappyIcon from '../Assets/Icons/illustrationHappyIcon.svg';
 import NewPasswordIcon from '../Assets/Icons/NewPasswordIcon.svg';
 import SafeFood from '../Assets/Icons/SafeFood.svg';
+
+
+
 export const ICONS = {
   smallIcon: smallIcon,
   largeIcon: largeIcon,
@@ -37,4 +40,5 @@ export const ICONS = {
   relaxIcon: relaxIcon,
   NewPasswordIcon: NewPasswordIcon,
   SafeFood: SafeFood,
+
 };

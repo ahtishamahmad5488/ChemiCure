@@ -7,6 +7,7 @@ import LanguageScreen from '../Screens/OnboardingScreen/LanguageScreen';
 import OnboardingScreen from '../Screens/OnboardingScreen/OnboardingScreen';
 import WelcomeScreen from '../Screens/OnboardingScreen/WelcomeScreen';
 import SplashScreen from '../Screens/SplashScreens/SplashScreen';
+import HomeScreen from '../Screens/HomeScreens/HomeScreen';
 
 export const SCREENS = {
   SplashScreen: SplashScreen,
@@ -19,4 +20,5 @@ export const SCREENS = {
   BackEmailScreen: BackEmailScreen,
   ForgotPasswordScreen: ForgotPasswordScreen,
   NewPasswordScreen: NewPasswordScreen,
+  HomeScreen:HomeScreen
 };

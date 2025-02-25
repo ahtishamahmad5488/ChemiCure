@@ -32,7 +32,7 @@ const ForgotPasswordScreen = ({navigation}) => {
           <UniversalButton
             buttonStyle={styles.buttonContainerStyle}
             label="Submit"
-            onPress={() => navigation.navigate('BackEmailScreen')}
+            onPress={() => navigation.navigate('NewPasswordScreen')}
           />
         </View>
       </View>
@@ -69,10 +69,12 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
+    width: '100%',
+    height: '23%',
+    borderWidth: 1.5,
+    borderColor: '#000',
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 8,
     marginBottom: 10,
   },
 
@@ -85,8 +87,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   buttonContainerStyle: {
-    marginTop: 80,
-    borderRadius: 30,
+    alignSelf: 'center',
+    marginTop: 50,
+    width: '90%',
+    height: 60,
+    borderRadius: 20,
   },
 });
 

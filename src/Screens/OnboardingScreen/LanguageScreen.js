@@ -14,7 +14,7 @@ const LanguageScreen = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={{flexGrow: 1}}>
       <ImageBackground
-        source={require('../../Assets/Icons/background.png')} // Background Image
+        source={require('../../Assets/Icons/language-background.png')} // Background Image
         style={styles.mainContainer}>
         {/* Back Button */}
         <TouchableOpacity
@@ -58,12 +58,14 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     paddingHorizontal: 20,
-    paddingTop: 10,
+    paddingTop: 30,
   },
   backButtonContainer: {
-    marginTop: 20,
+    marginTop: 0,
     marginHorizontal: 10,
+    paddingTop: 10,
   },
+  
   backText: {
     fontSize: 18,
     color: 'white',
@@ -80,12 +82,12 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignItems: 'center',
     paddingVertical: 50,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
     elevation: 5,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.3,
-    shadowRadius: 4,
+    shadowRadius: 5,
   },
   logoContainer: {
     position: 'absolute',
@@ -93,15 +95,16 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   languageText: {
+
     fontSize: 18,
     fontWeight: 'bold',
     color: '#4A5C24',
-    marginBottom: 20,
+    marginBottom: 30,
   },
   button: {
     width: '100%',
     backgroundColor: '#4A5C24',
-    paddingVertical: 12,
+    paddingVertical: 15,
     borderRadius: 30,
     alignItems: 'center',
     marginVertical: 8,
@@ -112,12 +115,24 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   buttonContainer: {
-    paddingHorizontal: 20,
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    elevation: 3, // Shadow for Android
+    shadowOffset: { width: 0, height: 2 },
+    marginBottom: 50,
     marginBottom: 20,
   },
   buttonStyle: {
+   
+    paddingVertical: 20,
+    paddingHorizontal: 30,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    marginBottom: 40,
     justifyContent: 'space-around',
-    borderRadius: 30,
+    
+    
   },
 });
 

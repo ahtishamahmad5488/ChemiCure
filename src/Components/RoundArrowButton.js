@@ -11,7 +11,7 @@ const RoundArrowButton = ({onPress}) => {
 };
 
 const styles = StyleSheet.create({
-  button: {
+  button: { 
     width: 55,
     height: 55,
     borderRadius: 30,

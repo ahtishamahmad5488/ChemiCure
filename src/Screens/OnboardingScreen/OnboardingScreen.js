@@ -13,11 +13,13 @@ import {ICONS} from '../../Constants/icons';
 import UniversalButton from '../../Components/universalButton';
 const OnboardingScreen = ({navigation}) => {
   return (
-    <ScrollView style={{flexGrow: 1}}>
+    
+      <ImageBackground
+              source={require('../../Assets/Icons/Onbording-background.png')} // Background Image
+              style={styles.backgroundContainer}>
+
       <View style={styles.mainContainer}>
-        <View style={styles.Logo}>
-          <ICONS.bgOnboardingIcon />
-        </View>
+
         <View style={styles.textContainer}>
           <Text style={styles.titleText}>
             Let's Begin Your Smart Farming Journey
@@ -31,27 +33,34 @@ const OnboardingScreen = ({navigation}) => {
           <View style={styles.buttonContainer}>
             <UniversalButton
               label="GET STARTED"
-              onPress={() => navigation.navigate('ForgotPasswordScreen')}
+              onPress={() => navigation.navigate('SignInScreen')}
               buttonStyle={styles.buttonStyle}
               arrowIcon={<ICONS.largeArrow />}
             />
           </View>
         </View>
       </View>
-    </ScrollView>
+      </ImageBackground>
+ 
+    
   );
 };
 
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: 'fff',
+    resizeMode: 'cover',
+    paddingHorizontal: 20,
+    paddingTop: '127%',
   },
-  Logo: {
-    backgroundColor: 'rgba(128, 167, 20, 1)',
-    height: '70%',
-    borderBottomLeftRadius: 34,
+
+  backgroundContainer: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
+
   textContainer: {
     marginTop: 30,
     justifyContent: 'center',
@@ -73,11 +82,18 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     marginTop: 30,
-    width: '90%',
+    width: '100%',
   },
   buttonStyle: {
+   
+    paddingVertical: 20,
+    paddingHorizontal: 30,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    marginBottom: 40,
     justifyContent: 'space-around',
-    borderRadius: 30,
+  
   },
 });
 
