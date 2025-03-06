@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {View, TouchableOpacity, StyleSheet, Text} from 'react-native';
+import {View, TouchableOpacity, StyleSheet} from 'react-native';
 import {SCREENS} from '../Constants/screens';
 import {ICONS} from '../Constants/icons';
 
@@ -16,17 +16,16 @@ const TabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
-        tabBarIcon: ({focused}) => {
+        tabBarIcon: () => {
           let IconComponent;
 
-          if (route.name === 'HomeScreen')
-            IconComponent = <ICONS.HomeIcon focused={focused} />;
+          if (route.name === 'HomeScreen') IconComponent = <ICONS.HomeIcon />;
           else if (route.name === 'HealthScreen')
-            IconComponent = <ICONS.HealthIcon focused={focused} />;
+            IconComponent = <ICONS.HealthIcon />;
           else if (route.name === 'RecommendationScreen')
-            IconComponent = <ICONS.RecommendationIcon focused={focused} />;
+            IconComponent = <ICONS.RecommendationIcon />;
           else if (route.name === 'UserScreen')
-            IconComponent = <ICONS.UserIcon focused={focused} />;
+            IconComponent = <ICONS.UserIcon />;
 
           return <View style={styles.iconContainer}>{IconComponent}</View>;
         },
@@ -65,7 +64,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 30,
     marginBottom: Platform.OS === 'ios' ? 10 : 0,
-    borderColor: 'rgba(61, 83, 0, 1)',
   },
   tabBarStyle: {
     height: 70,

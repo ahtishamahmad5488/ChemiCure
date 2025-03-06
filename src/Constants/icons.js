@@ -19,8 +19,32 @@ import NewPasswordIcon from '../Assets/Icons/NewPasswordIcon.svg';
 import RecommendationIcon from '../Assets/Icons/RecommendationIcon.svg';
 import PlusIcon from '../Assets/Icons/PlusIcon.svg';
 import SafeFood from '../Assets/Icons/SafeFood.svg';
+import UserIcon from '../Assets/Icons/UserIcon.svg';
+import HealthIcon from '../Assets/Icons/HealthIcon.svg';
+import HomeIcon from '../Assets/Icons/HomeIcon.svg';
+import menuIcon from '../Assets/Icons/menuIcon.svg';
+import waterIcon from '../Assets/Icons/waterIcon.svg';
+import HumidityIcon from '../Assets/Icons/HumidityIcon.svg';
+import bellIcon from '../Assets/Icons/bellIcon.svg';
+import chemicureText from '../Assets/Icons/chemicureText.svg';
+import TemperatureIcon from '../Assets/Icons/TemperatureIcon.svg';
+import batteryHealthIcon from '../Assets/Icons/batteryHealthIcon.svg';
+import detectionIcon from '../Assets/Icons/detectionIcon.svg';
+import smallHumidityIcon from '../Assets/Icons/smallHumidityIcon.svg';
+import smallTemperatureIcon from '../Assets/Icons/smallTemperatureIcon.svg';
+import smallWaterIcon from '../Assets/Icons/smallWaterIcon.svg';
+import tooSmallWheatIcon from '../Assets/Icons/tooSmallWheatIcon.svg';
+import wheatIcon from '../Assets/Icons/wheatIcon.svg';
+
 export const ICONS = {
   smallIcon: smallIcon,
+  batteryHealthIcon: batteryHealthIcon,
+  detectionIcon: detectionIcon,
+  smallHumidityIcon: smallHumidityIcon,
+  smallTemperatureIcon: smallTemperatureIcon,
+  smallWaterIcon: smallWaterIcon,
+  tooSmallWheatIcon: tooSmallWheatIcon,
+  wheatIcon: wheatIcon,
   largeIcon: largeIcon,
   mediamIcon: mediamIcon,
   menuIcon: menuIcon,
